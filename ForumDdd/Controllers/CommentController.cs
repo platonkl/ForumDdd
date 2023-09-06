@@ -2,7 +2,7 @@
 
 namespace ForumDdd.Controllers
 {
-    public class asdController : Controller
+    public class CommentController : Controller
     {
         public IActionResult Index()
         {
