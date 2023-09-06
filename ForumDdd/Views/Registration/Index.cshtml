@@ -1,0 +1,33 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Регистрация";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" type="text/css" href="~/regisrationStyles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Регистрация</h2>
+        <form method="post" asp-controller="Authorization" asp-action="Check">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" />
+            <span asp-validation-for="Email"></span>
+
+            <label asp-for="UserName"></label>
+            <input asp-for="UserName" />
+            <span asp-validation-for="UserName"></span>
+
+            <label asp-for="Password"></label>
+            <input asp-for="Password" />
+            <span asp-validation-for="Password"></span>
+
+            <input type="submit" value="Регистрация" />
+        </form>
+    </div>
+</body>
+</html>

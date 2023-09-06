@@ -1,12 +1,18 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Сайт</title>
-
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/styles.css">
 </head>
 <body>
-    <h1>Ебучий cshtml. майкрософт пидарасы!!!</h1>
-    <h2>@RenderBody()</h2>
-    
+    <header>
+        <nav>
+            <a href="/asd">asd</a>
+            <a href="/registration">Регистрация</a>
+        </nav>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
 </body>
 </html>

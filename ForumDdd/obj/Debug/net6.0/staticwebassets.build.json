@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EN173HyRLZUOSq/obD0O4LclN8V9yycjntzccSOI8Qk=",
+  "Hash": "e+VbIUmCMzvzjHUqFvsIEPa7PWb+AJbRKxttvVH5zVg=",
   "Source": "ForumDdd",
   "BasePath": "_content/ForumDdd",
   "Mode": "Default",
@@ -10,17 +10,34 @@
     {
       "Name": "ForumDdd\\wwwroot",
       "Source": "ForumDdd",
-      "ContentRoot": "C:\\Users\\Ivan\\Desktop\\Новая папка (2)\\ForumDdd\\ForumDdd\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ivan\\Desktop\\project\\ForumDdd\\wwwroot\\",
       "BasePath": "_content/ForumDdd",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Ivan\\Desktop\\Новая папка (2)\\ForumDdd\\ForumDdd\\wwwroot\\css\\styles.css",
+      "Identity": "C:\\Users\\Ivan\\Desktop\\project\\ForumDdd\\wwwroot\\css\\registrationStyles.css",
       "SourceId": "ForumDdd",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ivan\\Desktop\\Новая папка (2)\\ForumDdd\\ForumDdd\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ivan\\Desktop\\project\\ForumDdd\\wwwroot\\",
+      "BasePath": "_content/ForumDdd",
+      "RelativePath": "css/registrationStyles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\registrationStyles.css"
+    },
+    {
+      "Identity": "C:\\Users\\Ivan\\Desktop\\project\\ForumDdd\\wwwroot\\css\\styles.css",
+      "SourceId": "ForumDdd",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ivan\\Desktop\\project\\ForumDdd\\wwwroot\\",
       "BasePath": "_content/ForumDdd",
       "RelativePath": "css/styles.css",
       "AssetKind": "All",
@@ -32,23 +49,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\Ivan\\Desktop\\Новая папка (2)\\ForumDdd\\ForumDdd\\wwwroot\\js\\scripts.js",
-      "SourceId": "ForumDdd",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ivan\\Desktop\\Новая папка (2)\\ForumDdd\\ForumDdd\\wwwroot\\",
-      "BasePath": "_content/ForumDdd",
-      "RelativePath": "js/scripts.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\scripts.js"
     }
   ]
 }
