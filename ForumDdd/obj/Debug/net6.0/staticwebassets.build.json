@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TC481zXsE97auECYkLtaDY1bG0VjM1q1XkoTxvJF27c=",
+  "Hash": "EN173HyRLZUOSq/obD0O4LclN8V9yycjntzccSOI8Qk=",
   "Source": "ForumDdd",
   "BasePath": "_content/ForumDdd",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "ForumDdd\\wwwroot",
       "Source": "ForumDdd",
-      "ContentRoot": "C:\\Users\\Ivan\\source\\repos\\ForumDdd\\ForumDdd\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ivan\\Desktop\\Новая папка (2)\\ForumDdd\\ForumDdd\\wwwroot\\",
       "BasePath": "_content/ForumDdd",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Ivan\\source\\repos\\ForumDdd\\ForumDdd\\wwwroot\\css\\styles.css",
+      "Identity": "C:\\Users\\Ivan\\Desktop\\Новая папка (2)\\ForumDdd\\ForumDdd\\wwwroot\\css\\styles.css",
       "SourceId": "ForumDdd",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ivan\\source\\repos\\ForumDdd\\ForumDdd\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ivan\\Desktop\\Новая папка (2)\\ForumDdd\\ForumDdd\\wwwroot\\",
       "BasePath": "_content/ForumDdd",
       "RelativePath": "css/styles.css",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
-      "Identity": "C:\\Users\\Ivan\\source\\repos\\ForumDdd\\ForumDdd\\wwwroot\\js\\scripts.js",
+      "Identity": "C:\\Users\\Ivan\\Desktop\\Новая папка (2)\\ForumDdd\\ForumDdd\\wwwroot\\js\\scripts.js",
       "SourceId": "ForumDdd",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ivan\\source\\repos\\ForumDdd\\ForumDdd\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ivan\\Desktop\\Новая папка (2)\\ForumDdd\\ForumDdd\\wwwroot\\",
       "BasePath": "_content/ForumDdd",
       "RelativePath": "js/scripts.js",
       "AssetKind": "All",

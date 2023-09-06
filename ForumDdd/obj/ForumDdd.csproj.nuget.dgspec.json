@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ivan\\source\\repos\\ForumDdd\\ForumDdd\\ForumDdd.csproj": {}
+    "C:\\Users\\Ivan\\Desktop\\Новая папка (2)\\ForumDdd\\ForumDdd\\ForumDdd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ivan\\source\\repos\\ForumDdd\\ForumDdd\\ForumDdd.csproj": {
+    "C:\\Users\\Ivan\\Desktop\\Новая папка (2)\\ForumDdd\\ForumDdd\\ForumDdd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ivan\\source\\repos\\ForumDdd\\ForumDdd\\ForumDdd.csproj",
+        "projectUniqueName": "C:\\Users\\Ivan\\Desktop\\Новая папка (2)\\ForumDdd\\ForumDdd\\ForumDdd.csproj",
         "projectName": "ForumDdd",
-        "projectPath": "C:\\Users\\Ivan\\source\\repos\\ForumDdd\\ForumDdd\\ForumDdd.csproj",
+        "projectPath": "C:\\Users\\Ivan\\Desktop\\Новая папка (2)\\ForumDdd\\ForumDdd\\ForumDdd.csproj",
         "packagesPath": "C:\\Users\\Ivan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ivan\\source\\repos\\ForumDdd\\ForumDdd\\obj\\",
+        "outputPath": "C:\\Users\\Ivan\\Desktop\\Новая папка (2)\\ForumDdd\\ForumDdd\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
