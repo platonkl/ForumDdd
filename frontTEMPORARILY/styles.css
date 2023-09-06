@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;          /* Добавлено свойство display со значением flex */
+    justify-content: space-between;   /* Выравнивание по горизонтали, кнопка будет на правом краю */
+    align-items: center;    /* Выравнивание по вертикали, кнопка будет посередине по высоте */
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.login-button {
+    margin: 10px;
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.login-button:hover {
+    background-color: #45a049;
+}
