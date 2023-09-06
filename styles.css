@@ -8,6 +8,9 @@ body {
     background-color: #333;
     color: #fff;
     padding: 10px;
+    display: flex;          /* Добавлено свойство display со значением flex */
+    justify-content: space-between;   /* Выравнивание по горизонтали, кнопка будет на правом краю */
+    align-items: center;    /* Выравнивание по вертикали, кнопка будет посередине по высоте */
     text-align: left;
     position: fixed;
     top: 0;
@@ -26,6 +29,7 @@ body {
     color: #fff;
     border: none;
     cursor: pointer;
+    margin-right: 20px;
 }
 
 .login-button:hover {

@@ -3,17 +3,13 @@
 <head>
     <title>Сайт</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
 </head>
 <body>
     <div class="header">
         <h1>Текст</h1>
-        <button class="login-button">Войти</button>
+        <button class="login-button" onclick="authorizationPage()">Войти</button>
     </div>
     
-    <script>
-        document.querySelector('.login-button').addEventListener('click', function() {
-            alert('Открыть окно с авторизацией');
-        });
-    </script>
 </body>
 </html>
