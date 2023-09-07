@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body {
+    font-family: Poppins, serif;
+    background: linear-gradient(90deg, #2460C3 0%, #fff 100%);
+}
+
+.nav-link {
+    color:aqua
+}
+
+.navbar-nav .nav-link.active {
+    color:darkgrey;
+}
+.navbar-brand img {
+    width: 75px;
+}
+.navbar-toggler {
+    background-color: darkgrey;
+}
+.sidebar {
+    color: dark;
+    background: linear-gradient(90deg, #2C6DC9 0%, #FDFDFD 100%);
+}
+
+.card {
+    /* background: linear-gradient(90deg, #2C6DC9 0%, #FDFDFD 100%); */
+    /* фон карты и шрифт карты */
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
