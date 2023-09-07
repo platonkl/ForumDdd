@@ -2,13 +2,48 @@
 <html>
 <head>
     <title>@ViewData["Title"]</title>
-    <link rel="stylesheet" href="~/css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f3f3f3;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: left;
+            gap: 10px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #45a049;
+            }
+
+        main {
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
-            <a href="/comment">Оставить комментарий</a>
-            <a href="/registration">Регистрация</a>
+            <button onclick="location.href='/comment'">Оставить комментарий</button>
+            <button onclick="location.href='/registration'">Регистрация</button>
         </nav>
     </header>
     <main>
