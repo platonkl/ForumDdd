@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Форум</title>
+    <style>
+        /* Стилизация страницы форума */
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #0c5bdcfc;
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        .container {
+            margin: 0 auto;
+            padding-bottom: 20px;
+            padding-top: 10px;
+        }
+
+        .header-items {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 10px;
+        }
+
+        .forum-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .topic {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .topic-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .topic-content {
+            margin-bottom: 10px;
+        }
+
+        .button {
+            background-color: #0c5bdcfc;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            padding-bottom: 10px;
+            max-width: 200px;
+            max-height: 50px;
+        }
+
+        .button:hover {
+            background-color: #0c5bdcfc;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .dropdown:hover .button {
+            background-color: #0c5bdcfc;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            margin-top: 10px;
+        }
+
+        .dropdown-item {
+            padding: 12px 16px;
+            cursor: pointer;
+        }
+
+        .dropdown-item:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .search-input {
+            width: 1200px;
+            height: 30px;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Sibsau Forum</h1>
+    </header>
+
+    <div class="container">
+        <div class="header-items">
+            <div class="dropdown">
+                <button id="sortButton" onclick="toggleDropdown()" class="button">
+                    Сортировать по :
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <div class="dropdown-item" onclick="selectItem(this)">
+                        Наиболее популярно
+                    </div>
+                    <div class="dropdown-item" onclick="selectItem(this)">
+                        Последнее
+                    </div>
+                    <div class="dropdown-item" onclick="selectItem(this)">
+                        Без ответа
+                    </div>
+                </div>
+            </div>
+            <input type="text" id="searchInput" class="search-input" placeholder="Поиск..." />
+            <button class="button">Добавить тему</button>
+        </div>
+        <div class="topic">
+            <h3 class="topic-title">Название темы 1</h3>
+            <p class="topic-content">Описание темы 1</p>
+        </div>
+
+        <div class="topic">
+            <h3 class="topic-title">Название темы 2</h3>
+            <p class="topic-content">Описание темы 2</p>
+        </div>
+
+        <div class="topic">
+            <h3 class="topic-title">Название темы 3</h3>
+            <p class="topic-content">Описание темы 3</p>
+        </div>
+
+        <div class="topic">
+            <h3 class="topic-title">Название темы 4</h3>
+            <p class="topic-content">Описание темы 4</p>
+        </div>
+
+        <div class="topic">
+            <h3 class="topic-title">Название темы 5</h3>
+            <p class="topic-content">Описание темы 5</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleDropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches(".button")) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains("show")) {
+                        openDropdown.classList.remove("show");
+                    }
+                }
+            }
+        };
+
+        function selectItem(item) {
+            var button = document.getElementById("sortButton");
+            button.innerHTML = item.innerHTML;
+            document.getElementById("myDropdown").classList.remove("show");
+        }
+    </script>
+</body>
+
+</html>
