@@ -77,20 +77,19 @@ header {
 
 .topic {
     border-top: 1px solid #ccc;
-    border-radius: 0px;
     padding: 10px;
     margin-bottom: 10px;
 }
 
 .own-topic-first {
     padding: 10px;
-    margin: 10px;
+    margin-bottom: 10px;
 }
 
 .own-topic {
     border-top: 1px solid #ccc;
     padding: 10px;
-    margin: 10px;
+    margin-bottom: 10px;
 }
 
 .topic-title {
@@ -129,7 +128,7 @@ header {
     padding-left: 0px;
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .sortBar li a {
