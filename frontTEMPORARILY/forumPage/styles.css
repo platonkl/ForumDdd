@@ -288,4 +288,5 @@ header {
 
 .caption {
     display: inline-block;
+    font-weight: bold;
 }
