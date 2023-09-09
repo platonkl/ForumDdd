@@ -275,3 +275,17 @@ header {
     color: inherit;
     text-decoration: none;
 }
+
+.image-with-text {
+    display: flex;
+    align-items: center;
+}
+
+.leftpic {
+    margin-right: 10px;
+    width: 80px;
+}
+
+.caption {
+    display: inline-block;
+}
