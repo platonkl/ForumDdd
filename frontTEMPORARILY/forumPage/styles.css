@@ -221,12 +221,10 @@ header {
 }
 
 .own-topics {
-    height: 520px;
-    
 }
 
 .widget-login {
-    height: auto;
+    height: 100%;
     
 }
 
@@ -291,3 +289,20 @@ header {
     font-weight: bold;
 }
 
+.widget-login.btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.btn.btn-primary {
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
