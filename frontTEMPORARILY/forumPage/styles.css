@@ -303,7 +303,6 @@ header {
     padding-right: 15px;
 
 }
-
 /* FORMS */
 
 .reg_form h2 {
@@ -327,8 +326,10 @@ header {
     margin-left: 55px;
     transition: all .3s;
 }
+/* FORMS */
 
 .buttons_auth_reg {
     display: flex;
     justify-content: right;
 }
+
