@@ -338,4 +338,12 @@ header {
     display: flex;
     justify-content: right;
 }
+.reg_button {
+    padding-left: 10px;
+}
+
+.btn-secondary {
+    background-color: #eeeeee;
+    color: #000000;
+}
 
