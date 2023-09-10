@@ -271,7 +271,13 @@ header {
     text-decoration: none;
 }
 
-.image-with-text {
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-text {
     display: flex;
     align-items: center;
 }
