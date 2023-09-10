@@ -327,3 +327,8 @@ header {
     margin-left: 55px;
     transition: all .3s;
 }
+
+.buttons_auth_reg {
+    display: flex;
+    justify-content: right;
+}
