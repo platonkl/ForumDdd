@@ -337,6 +337,7 @@ header {
 .buttons_auth_reg {
     display: flex;
     justify-content: right;
+
 }
 .reg_button {
     padding-left: 10px;
@@ -349,5 +350,36 @@ header {
 
 .form-label {
     font-size: 23px;
+}
+
+.button-secondary {
+    display: inline-block;
+    background-color: #eeeeee;
+    color:#000000;
+    border-radius: 5px; /* скругление углов */
+    text-decoration: none; /* не подчеркивать ссылку */
+    transition: 0.2s; /* плавный ховер эффект */
+    font-size: 22px; /* размер шрифта */
+    padding: 10px 20px;
+  }
+
+.button-secondary2 {
+    display: inline-block;
+    background-color: #eeeeee;
+    color:#000000;
+    border-radius: 5px; /* скругление углов */
+    text-decoration: none; /* не подчеркивать ссылку */
+    transition: 0.2s; /* плавный ховер эффект */
+    font-size: 22px; /* размер шрифта */
+    padding: 10px 20px;
+}
+
+.button-secondary:hover {
+    background-color: #949a9a; /* замена цвета кнопки при наведении */
+}
+
+.button-secondary2:hover {
+    background-color: #949a9a; /* замена цвета кнопки при наведении */
+
 }
 
