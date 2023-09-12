@@ -283,11 +283,11 @@ header {
 }
 
 .leftpic {
-    margin-right: 10px;
     width: 80px;
 }
 
 .caption {
+    margin-left: 10px;
     display: inline-block;
     font-weight: bold;
 }
