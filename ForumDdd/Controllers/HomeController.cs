@@ -13,19 +13,19 @@ namespace ForumDdd.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Recently()
         {
-            return View("~/Views/Home/Recently.cshtml");
+            return View("Recently");
         }
 
         public IActionResult Popular()
         {
-            return View("~/Views/Home/Popular.cshtml");
+            return View("Popular");
         }
 
         public IActionResult WithoutAnswer()
         {
-            return View("~/Views/Home/WithoutAnswear.cshtml");
+            return View("WithoutAnswer");
         }
 
 
