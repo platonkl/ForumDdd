@@ -1,35 +1,385 @@
-﻿/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0 auto;
+
 }
 
 header {
-    background-color: #f3f3f3;
-    padding: 20px;
+    background-color: #0c5bdc;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-nav {
+.header-content {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
 }
 
-button {
-    background-color: #e31c1c;
-    color: white;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.button {
+    background-color: #fff;
+    color: #0c5bdc;
+    padding: 10px 20px;
     border: none;
-    padding: 50px 50px;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-    button:hover {
-        background-color: #45a049;
-    }
-
-main {
-    padding: 20px;
+.button:hover {
+    background-color: #f2f2f2;
 }
+
+.search_wrap {
+    width: 68%;
+    margin-top: 38px;
+    margin-bottom: 0px;
+}
+
+.search_wrap .search_box {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+
+.search_wrap .search_box .input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.search_wrap .search_box .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    background: #0c5bdc;
+    border-radius: 5px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.search_wrap .search_box .btn:hover {
+    background: #2868ce;
+}
+
+.search_wrap .search_box .btn.btn_common .fas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.wrapper {
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 100px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.content {
+    width: 68%;
+    float: left;
+}
+
+.sideBar {
+    float: right;
+    width: 32%;
+    padding-left: 70px;
+}
+
+.header-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.forum-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.topic-first {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.topic {
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.own-topic-first {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.own-topic {
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.topic-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.topic-content {
+    margin-bottom: 10px;
+}
+
+.search-input {
+    width: 1350px;
+    height: 32.5px;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.sortBar {
+    margin: 20px 0px 35px 0;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: left;
+
+}
+
+.sortBarSide {
+    margin: 20px 0px 35px 0;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: left;
+}
+
+.sortBar li a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 15px 22px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.widget-login a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 15px 22px;       
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.page-item {
+    float: left;
+    margin: 0 0px 0 0px;
+    padding: 0;
+    border-bottom: 2px solid #ccc;
+
+}
+
+.page-item-current {
+    float: left;
+    margin: 0 0px 0 0px;
+    padding: 0;
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.widget-login {
+    height: 100%;
+
+}
+
+.pagination {
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    clear: left;
+    margin-top: -1px;
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+
+.pagination .Navi {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin: 30px 0;
+    padding: 18px 0;
+}
+
+.pagination .on {
+    color: #ffffff;
+    background: #0c5bdc;
+    margin-left: 0;
+    line-height: 28px;
+    border-radius: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-right: 3px;
+    display: inline;
+    font-weight: bold;
+}
+
+.pagination a {
+    color: #000000;
+    background: #ffff;
+    margin-left: 0;
+    line-height: 28px;
+    padding: 8px 14px;
+    margin-right: 3px;
+    display: inline;
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+}
+
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+}
+
+.leftpic {
+    margin-right: 10px;
+    width: 80px;
+}
+
+.caption {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.widget-login.btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.btn.btn-primary {
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+/* FORMS */
+
+.reg_form h2 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.reg_form input {
+    height: 3.3rem;
+}
+
+.reg_form a {
+    font-size: 1.2em;
+    transition: all .3s;
+    color:#0c5bdc;
+    text-decoration: none;
+    margin-left: 60px;
+}
+
+.reg_form a:hover {
+    margin-left: 55px;
+    transition: all .3s;
+}
+/* FORMS */
+
+.buttons_auth_reg {
+    display: flex;
+    justify-content: right;
+
+}
+.reg_button {
+    padding-left: 10px;
+}
+
+.btn-secondary {
+    background-color: #eeeeee;
+    color: #000000;
+}
+
+.form-label {
+    font-size: 23px;
+}
+
+.button-secondary {
+    display: inline-block;
+    background-color: #eeeeee;
+    color:#000000;
+    border-radius: 5px; /* скругление углов */
+    text-decoration: none; /* не подчеркивать ссылку */
+    transition: 0.2s; /* плавный ховер эффект */
+    font-size: 22px; /* размер шрифта */
+    padding: 10px 20px;
+  }
+
+.button-secondary2 {
+    display: inline-block;
+    background-color: #eeeeee;
+    color:#000000;
+    border-radius: 5px; /* скругление углов */
+    text-decoration: none; /* не подчеркивать ссылку */
+    transition: 0.2s; /* плавный ховер эффект */
+    font-size: 22px; /* размер шрифта */
+    padding: 10px 20px;
+}
+
+.button-secondary:hover {
+    background-color: #949a9a; /* замена цвета кнопки при наведении */
+}
+
+.button-secondary2:hover {
+    background-color: #949a9a; /* замена цвета кнопки при наведении */
+
+}
+

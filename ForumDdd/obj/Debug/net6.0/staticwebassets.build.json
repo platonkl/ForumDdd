@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "e+VbIUmCMzvzjHUqFvsIEPa7PWb+AJbRKxttvVH5zVg=",
+  "Hash": "stP3ek9wrf5IlWsJgTTeQEV0ZS5SR7eP2I1hofbsk1Q=",
   "Source": "ForumDdd",
   "BasePath": "_content/ForumDdd",
   "Mode": "Default",
@@ -10,34 +10,17 @@
     {
       "Name": "ForumDdd\\wwwroot",
       "Source": "ForumDdd",
-      "ContentRoot": "C:\\Users\\Ivan\\Desktop\\project\\ForumDdd\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ivan\\Desktop\\code\\P1\\ForumDdd\\ForumDdd\\wwwroot\\",
       "BasePath": "_content/ForumDdd",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Ivan\\Desktop\\project\\ForumDdd\\wwwroot\\css\\registrationStyles.css",
+      "Identity": "C:\\Users\\Ivan\\Desktop\\code\\P1\\ForumDdd\\ForumDdd\\wwwroot\\css\\styles.css",
       "SourceId": "ForumDdd",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ivan\\Desktop\\project\\ForumDdd\\wwwroot\\",
-      "BasePath": "_content/ForumDdd",
-      "RelativePath": "css/registrationStyles.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\registrationStyles.css"
-    },
-    {
-      "Identity": "C:\\Users\\Ivan\\Desktop\\project\\ForumDdd\\wwwroot\\css\\styles.css",
-      "SourceId": "ForumDdd",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ivan\\Desktop\\project\\ForumDdd\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ivan\\Desktop\\code\\P1\\ForumDdd\\ForumDdd\\wwwroot\\",
       "BasePath": "_content/ForumDdd",
       "RelativePath": "css/styles.css",
       "AssetKind": "All",
@@ -49,6 +32,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\Ivan\\Desktop\\code\\P1\\ForumDdd\\ForumDdd\\wwwroot\\css\\topicStyles.css",
+      "SourceId": "ForumDdd",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ivan\\Desktop\\code\\P1\\ForumDdd\\ForumDdd\\wwwroot\\",
+      "BasePath": "_content/ForumDdd",
+      "RelativePath": "css/topicStyles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\topicStyles.css"
+    },
+    {
+      "Identity": "C:\\Users\\Ivan\\Desktop\\code\\P1\\ForumDdd\\ForumDdd\\wwwroot\\js\\site.js",
+      "SourceId": "ForumDdd",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ivan\\Desktop\\code\\P1\\ForumDdd\\ForumDdd\\wwwroot\\",
+      "BasePath": "_content/ForumDdd",
+      "RelativePath": "js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
     }
   ]
 }

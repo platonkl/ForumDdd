@@ -15,8 +15,20 @@ namespace ForumDdd.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View("~/Views/Home/Recently.cshtml");
         }
+
+        public IActionResult Popular()
+        {
+            return View("~/Views/Home/Popular.cshtml");
+        }
+
+        public IActionResult WithoutAnswer()
+        {
+            return View("~/Views/Home/WithoutAnswear.cshtml");
+        }
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

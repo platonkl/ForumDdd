@@ -9,33 +9,33 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ForumDdd
 build_property.RootNamespace = ForumDdd
-build_property.ProjectDir = C:\Users\Ivan\Desktop\project\ForumDdd\
+build_property.ProjectDir = C:\Users\Ivan\Desktop\code\P1\ForumDdd\ForumDdd\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Ivan\Desktop\project\ForumDdd
+build_property.MSBuildProjectDirectory = C:\Users\Ivan\Desktop\code\P1\ForumDdd\ForumDdd
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Ivan/Desktop/project/ForumDdd/Views/Comment/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxJbmRleC5jc2h0bWw=
+[C:/Users/Ivan/Desktop/code/P1/ForumDdd/ForumDdd/Views/Home/Popular.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb3B1bGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ivan/Desktop/project/ForumDdd/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/Ivan/Desktop/code/P1/ForumDdd/ForumDdd/Views/Home/Recently.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWNlbnRseS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ivan/Desktop/project/ForumDdd/Views/Registration/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmF0aW9uXEluZGV4LmNzaHRtbA==
+[C:/Users/Ivan/Desktop/code/P1/ForumDdd/ForumDdd/Views/Home/WithoutAnswer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXaXRob3V0QW5zd2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ivan/Desktop/project/ForumDdd/Views/Shared/_Layout.cshtml]
+[C:/Users/Ivan/Desktop/code/P1/ForumDdd/ForumDdd/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ivan/Desktop/project/ForumDdd/Views/_ViewImports.cshtml]
+[C:/Users/Ivan/Desktop/code/P1/ForumDdd/ForumDdd/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ivan/Desktop/project/ForumDdd/Views/_ViewStart.cshtml]
+[C:/Users/Ivan/Desktop/code/P1/ForumDdd/ForumDdd/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,4 +1,4 @@
-namespace ForumDdd.Models
+﻿namespace ForumDdd.Models
 {
     public class ErrorViewModel
     {

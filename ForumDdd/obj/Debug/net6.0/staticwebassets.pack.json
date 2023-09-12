@@ -1,12 +1,16 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Ivan\\Desktop\\project\\ForumDdd\\wwwroot\\css\\registrationStyles.css",
-      "PackagePath": "staticwebassets\\css\\registrationStyles.css"
+      "Id": "C:\\Users\\Ivan\\Desktop\\code\\P1\\ForumDdd\\ForumDdd\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
-      "Id": "C:\\Users\\Ivan\\Desktop\\project\\ForumDdd\\wwwroot\\css\\styles.css",
-      "PackagePath": "staticwebassets\\css\\styles.css"
+      "Id": "C:\\Users\\Ivan\\Desktop\\code\\P1\\ForumDdd\\ForumDdd\\wwwroot\\css\\topicStyles.css",
+      "PackagePath": "staticwebassets\\css\\topicStyles.css"
+    },
+    {
+      "Id": "C:\\Users\\Ivan\\Desktop\\code\\P1\\ForumDdd\\ForumDdd\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ForumDdd.Microsoft.AspNetCore.StaticWebAssets.props",
