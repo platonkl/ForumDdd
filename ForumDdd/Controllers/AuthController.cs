@@ -28,7 +28,7 @@ namespace ForumDdd.Controllers
         {
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
-            return RedirectToAction("Index");
+            return RedirectToAction("Recently", "Home");
         }
 
     }
