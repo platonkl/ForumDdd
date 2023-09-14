@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "stP3ek9wrf5IlWsJgTTeQEV0ZS5SR7eP2I1hofbsk1Q=",
+  "Hash": "FtfYZj9IpRhpGzTqd9QTL61jpqf56FYjodHLLASWCac=",
   "Source": "ForumDdd",
   "BasePath": "_content/ForumDdd",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "ForumDdd\\wwwroot",
       "Source": "ForumDdd",
-      "ContentRoot": "C:\\Users\\Ivan\\Desktop\\code\\P1\\ForumDdd\\ForumDdd\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\platon\\Desktop\\code\\ForumP1\\ForumDdd\\ForumDdd\\wwwroot\\",
       "BasePath": "_content/ForumDdd",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Ivan\\Desktop\\code\\P1\\ForumDdd\\ForumDdd\\wwwroot\\css\\styles.css",
+      "Identity": "C:\\Users\\platon\\Desktop\\code\\ForumP1\\ForumDdd\\ForumDdd\\wwwroot\\css\\styles.css",
       "SourceId": "ForumDdd",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ivan\\Desktop\\code\\P1\\ForumDdd\\ForumDdd\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\platon\\Desktop\\code\\ForumP1\\ForumDdd\\ForumDdd\\wwwroot\\",
       "BasePath": "_content/ForumDdd",
       "RelativePath": "css/styles.css",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
-      "Identity": "C:\\Users\\Ivan\\Desktop\\code\\P1\\ForumDdd\\ForumDdd\\wwwroot\\css\\topicStyles.css",
+      "Identity": "C:\\Users\\platon\\Desktop\\code\\ForumP1\\ForumDdd\\ForumDdd\\wwwroot\\css\\topicStyles.css",
       "SourceId": "ForumDdd",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ivan\\Desktop\\code\\P1\\ForumDdd\\ForumDdd\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\platon\\Desktop\\code\\ForumP1\\ForumDdd\\ForumDdd\\wwwroot\\",
       "BasePath": "_content/ForumDdd",
       "RelativePath": "css/topicStyles.css",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\css\\topicStyles.css"
     },
     {
-      "Identity": "C:\\Users\\Ivan\\Desktop\\code\\P1\\ForumDdd\\ForumDdd\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\platon\\Desktop\\code\\ForumP1\\ForumDdd\\ForumDdd\\wwwroot\\js\\site.js",
       "SourceId": "ForumDdd",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ivan\\Desktop\\code\\P1\\ForumDdd\\ForumDdd\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\platon\\Desktop\\code\\ForumP1\\ForumDdd\\ForumDdd\\wwwroot\\",
       "BasePath": "_content/ForumDdd",
       "RelativePath": "js/site.js",
       "AssetKind": "All",

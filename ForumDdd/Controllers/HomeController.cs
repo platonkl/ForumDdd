@@ -15,17 +15,17 @@ namespace ForumDdd.Controllers
 
         public IActionResult Recently()
         {
-            return View("Recently");
+            return View();
         }
 
         public IActionResult Popular()
         {
-            return View("Popular");
+            return View();
         }
 
         public IActionResult WithoutAnswer()
         {
-            return View("WithoutAnswer");
+            return View();
         }
 
 

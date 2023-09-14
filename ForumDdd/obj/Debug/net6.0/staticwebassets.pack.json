@@ -1,15 +1,15 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Ivan\\Desktop\\code\\P1\\ForumDdd\\ForumDdd\\wwwroot\\css\\styles.css",
+      "Id": "C:\\Users\\platon\\Desktop\\code\\ForumP1\\ForumDdd\\ForumDdd\\wwwroot\\css\\styles.css",
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
-      "Id": "C:\\Users\\Ivan\\Desktop\\code\\P1\\ForumDdd\\ForumDdd\\wwwroot\\css\\topicStyles.css",
+      "Id": "C:\\Users\\platon\\Desktop\\code\\ForumP1\\ForumDdd\\ForumDdd\\wwwroot\\css\\topicStyles.css",
       "PackagePath": "staticwebassets\\css\\topicStyles.css"
     },
     {
-      "Id": "C:\\Users\\Ivan\\Desktop\\code\\P1\\ForumDdd\\ForumDdd\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\platon\\Desktop\\code\\ForumP1\\ForumDdd\\ForumDdd\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
