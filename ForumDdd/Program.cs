@@ -6,9 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 var connectionString = builder.Configuration.GetConnectionString("MSSQL");
-builder.Services.AddDbContext<ForumDddContext>(options =>
+builder.Services.AddDbContext<ForumDddDbContext>(options =>
 {
-    options.UseSqlServer();
+    options.UseSqlServer(connectionString);
 });
 
 var app = builder.Build();

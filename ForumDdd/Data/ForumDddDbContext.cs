@@ -8,15 +8,17 @@ using System.Threading.Tasks;
 
 namespace ForumDdd.Data
 {
-    public class ForumDddContext : DbContext
+    public class ForumDddDbContext : DbContext
     {
 
-        public ForumDddContext(DbContextOptions<ForumDddContext> options) : base(options)
+        public DbSet<User> Users { get; set; } = null!;
+
+        public ForumDddDbContext(DbContextOptions<ForumDddDbContext> options) : base(options) 
         {
             Database.EnsureCreated();
         }
 
-        public DbSet<User> User { get; set; }
+
     }
 
 }

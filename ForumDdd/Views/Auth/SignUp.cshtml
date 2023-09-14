@@ -28,8 +28,20 @@
         </div>
         <div class="w-100"></div>
         <div class="mb-3 col-12 col-md-4">
-            <button type="button" class="btn btn-primary">Зарегистрироваться</button>
+            <button id="createUser" type="button" class="btn btn-primary">Зарегистрироваться</button>
             <a href="~/Auth/SignIn">Авторизоваться</a>
         </div>
     </form>
 </div>
+
+@section Scripts
+{
+    <script>
+        $('createUser').on('click', function () {
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action()'
+            })
+        });
+    </script>
+}
