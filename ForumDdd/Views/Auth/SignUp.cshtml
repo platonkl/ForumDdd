@@ -1,25 +1,26 @@
-﻿@{
+﻿@model ForumDdd.Models.User
+@{
     ViewBag.Title = "SignUp";
     Layout = "/Views/Shared/_LayoutAuth.cshtml";
 }
 
 <div class="container reg_form">
-    <form class="row justify-content-center" method="post" action="reg.html">
+    <form class="row justify-content-center" method="post" asp-action="create" asp-controller="auth">
         <h2>Форма регистрации</h2>
         <div class="mb-3 col-12 col-md-4">
-            <label for="formGroupExampleInput" class="form-label">Ваш логин</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="введите ваш логин...">
+            <label for="formGroupExampleInput" class="form-label" asp-for="UserName">Ваш логин</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="введите ваш логин..." asp-for="UserName">
         </div>
         <div class="w-100"></div>
         <div class="mb-3 col-12 col-md-4">
-            <label for="exampleInputEmail1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="exampleInputEmail1" class="form-label" asp-for="Email">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" asp-for="Email">
             <div id="emailHelp" class="form-text">Ваш email адрес не будет использван для спама!</div>
         </div>
         <div class="w-100"></div>
         <div class="mb-3 col-12 col-md-4">
-            <label for="exampleInputPassword1" class="form-label">Пароль</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <label for="exampleInputPassword1" class="form-label" asp-for="Password">Пароль</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" asp-for="Password">
         </div>
         <div class="w-100"></div>
         <div class="mb-3 col-12 col-md-4">
@@ -28,7 +29,7 @@
         </div>
         <div class="w-100"></div>
         <div class="mb-3 col-12 col-md-4">
-            <button id="createUser" type="button" class="btn btn-primary">Зарегистрироваться</button>
+            <button id="createUser" type="submit" class="btn btn-primary">Зарегистрироваться</button>
             <a href="~/Auth/SignIn">Авторизоваться</a>
         </div>
     </form>
