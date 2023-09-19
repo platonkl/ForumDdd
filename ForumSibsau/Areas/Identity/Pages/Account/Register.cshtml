@@ -1,0 +1,46 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="container reg_form">
+    <form class="row justify-content-center" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+        <h2>Форма регистрации</h2>
+        <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+        <div class="mb-3 col-12 col-md-4">
+            <label for="formGroupExampleInput" class="form-label" asp-for="Input.UserName">Ваш логин</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" asp-for="Input.UserName">
+            <span asp-validation-for="Input.UserName" class="text-danger"></span>
+        </div>
+        <div class="w-100"></div>
+        <div class="mb-3 col-12 col-md-4">
+            <label for="exampleInputEmail1" class="form-label" asp-for="Input.Email">Email</label>
+            <input asp-for="Input.Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            <span asp-validation-for="Input.Email" class="text-danger"></span>
+        </div>
+        <div class="w-100"></div>
+        <div class="mb-3 col-12 col-md-4">
+            <label for="exampleInputPassword1" class="form-label" asp-for="Input.Password">Пароль</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" asp-for="Input.Password">
+            <span asp-validation-for="Input.Password" class="text-danger"></span>
+        </div>
+        <div class="w-100"></div>
+        <div class="mb-3 col-12 col-md-4">
+            <label for="exampleInputPassword1" class="form-label" asp-for="Input.ConfirmPassword">Подтвердите пароль</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" asp-for="Input.ConfirmPassword">
+            <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+        </div>
+        <div class="w-100"></div>
+        <div class="mb-3 col-12 col-md-4">
+            <button id="createUser" type="submit" class="btn btn-primary">Зарегистрироваться</button>
+            <a href="~/Auth/SignIn">Авторизоваться</a>
+        </div>
+    </form>
+</div>
+
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
