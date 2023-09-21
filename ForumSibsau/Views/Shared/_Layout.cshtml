@@ -63,14 +63,14 @@
                             var firstPost = currentUserPosts.First();
                             <div class="own-topic-first">
                                 <h3 class="topic-title">@firstPost.Title</h3>
-                                <p class="topic-content">@firstPost.ResponsesCount</p>
+                                <p class="topic-content">Количество ответов: @firstPost.ResponsesCount</p>
                             </div>
                         }
                         @foreach (var post in currentUserPosts.Skip(1))
                         {
                             <div class="own-topic">
                                 <h3 class="topic-title">@post.Title</h3>
-                                <p class="topic-content">@post.ResponsesCount</p>
+                                <p class="topic-content">Количество ответов: @post.ResponsesCount</p>
                             </div>
                         }
                     </div>
