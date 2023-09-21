@@ -1,0 +1,27 @@
+﻿@model ForumSibsau.Models.Post
+@{
+    Layout = "_LayoutHead";
+}
+<div class="container mt-5">
+    <h1 class="mb-4">Создание топика</h1>
+    <form asp-action="Create">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="mb-3">
+            <label asp-for="Title" class="form-label">Заголовок</label>
+            <input asp-for="Title" type="text" class="form-control" id="topic-title" placeholder="Введите заголовок">
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Content" class="form-label">Основной текст</label>
+            <textarea asp-for="Content" class="form-control" id="topic-text" rows="5" placeholder="Введите основной текст"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Создать</button>
+        <a asp-action="Recently" asp-controller="Home" class="btn btn-secondary">Вернуться на главную</a>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

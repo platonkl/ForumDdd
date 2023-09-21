@@ -1,4 +1,13 @@
-﻿<!DOCTYPE html>
+﻿@using ForumSibsau.Data;
+@using Microsoft.AspNetCore.Identity
+@using ForumSibsau.Areas.Identity.Data
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@{
+    var currentUserPosts = ViewData["CurrentUserPosts"] as List<Post>;
+}
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -41,38 +50,57 @@
             @RenderBody()
         </div>
         <div class="sideBar">
-            <div class="widget-login">
-                <ul class="sortBarSide">
-                    <li class="page-item">
-                        <a href="#">Мои темы</a>
-                    </li>
-                </ul>
-                <div class="own-topics">
-                    <div class="own-topic-first">
-                        <h3 class="topic-title">Название темы 1</h3>
-                        <p class="topic-content">Описание темы 1</p>
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <div class="widget-login">
+                    <ul class="sortBarSide">
+                        <li class="page-item-current">
+                            <a href="#">Мои темы</a>
+                        </li>
+                    </ul>
+                    <div class="own-topics">
+                        @{
+                            var firstPost = currentUserPosts.First();
+                            <div class="own-topic-first">
+                                <h3 class="topic-title">@firstPost.Title</h3>
+                                <p class="topic-content">@firstPost.ResponsesCount</p>
+                            </div>
+                        }
+                        @foreach (var post in currentUserPosts.Skip(1))
+                        {
+                            <div class="own-topic">
+                                <h3 class="topic-title">@post.Title</h3>
+                                <p class="topic-content">@post.ResponsesCount</p>
+                            </div>
+                        }
                     </div>
-
-                    <div class="own-topic">
-                        <h3 class="topic-title">Название темы 2</h3>
-                        <p class="topic-content">Описание темы 2</p>
-                    </div>
-
-                    <div class="own-topic">
-                        <h3 class="topic-title">Название темы 3</h3>
-                        <p class="topic-content">Описание темы 3</p>
+                    <div class="widget-login btns">
+                        <a asp-controller="Post" asp-action="Create">
+                            <button type="button" class="btn btn-primary">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </a>
+                        <a asp-controller="Post" asp-action="Create">
+                            <button type="button" class="btn btn-primary">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+                        </a>      
                     </div>
                 </div>
-                <div class="widget-login btns">
-                    <button type="button" class="btn btn-primary">
-                        <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                        <i class="fa-solid fa-ellipsis"></i>
-                    </button>
+            }
+            else
+            {
+                <div class="auth-widget">
+                    <div class="col-md-6">
+                        <div class="card bg-primary text-white">
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Чтобы добавить тему нужно авторизоваться</h3>
+                                <a class ="button-secondary" asp-area="Identity" asp-page="/Account/Login">АВТОРИЗОВАТЬСЯ</a>
+                            </div>
+                        </div>
+                    </div>     
                 </div>
-            </div>
-
+            }
         </div>
     </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

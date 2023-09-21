@@ -1,4 +1,5 @@
 ﻿using ForumSibsau.Areas.Identity.Data;
+using ForumSibsau.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +13,8 @@ public class ForumSibsauDbContext : IdentityDbContext<ApplicationUser>
         : base(options)
     {
     }
+
+    public DbSet<Post> Posts { get; set; } = default!;
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

@@ -383,3 +383,37 @@ header {
 
 }
 
+.auth-widget {
+    margin-top: 20px;
+}
+
+.col-md-6 {
+    width: 80%;
+}
+
+.card {
+    border: none;
+    height: 340px;
+    display: flex;
+}
+
+    .card .card-body {
+        padding: 2rem;
+        padding-top: 90px;
+    }
+
+    .card .card-title {
+        margin-bottom: 2rem;
+    }
+
+.btn-light {
+    background-color: #fff;
+    color: #0c5bdc;
+    border-color: #fff;
+}
+
+    .btn-light:hover {
+        background-color: #fff;
+        color: #0c5bdc;
+        border-color: #fff;
+    }

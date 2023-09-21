@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<Post>
+@{
     ViewBag.Title = "Popular";
 }
 
@@ -13,45 +14,21 @@
         <a href="~/Home/WithoutAnswer">Без ответа</a>
     </li>
 </ul>
-<div class="topic-first">
-    <h3 class="topic-title">Название темы 1</h3>
-    <p class="topic-content">Описание темы 1</p>
-</div>
+@{
+    var firstPost = Model.First();
+    <div class="topic-first">
+        <h3 class="topic-title">@firstPost.Title</h3>
+        <p class="topic-content">Количество ответов: @firstPost.ResponsesCount</p>
+    </div>
+}
 
-<div class="topic">
-    <h3 class="topic-title">Название темы 2</h3>
-    <p class="topic-content">Описание темы 2</p>
-</div>
-
-<div class="topic">
-    <h3 class="topic-title">Название темы 3</h3>
-    <p class="topic-content">Описание темы 3</p>
-</div>
-
-<div class="topic">
-    <h3 class="topic-title">Название темы 4</h3>
-    <p class="topic-content">Описание темы 4</p>
-</div>
-
-<div class="topic">
-    <h3 class="topic-title">Название темы 5</h3>
-    <p class="topic-content">Описание темы 5</p>
-</div>
-
-<div class="topic">
-    <h3 class="topic-title">Название темы 6</h3>
-    <p class="topic-content">Описание темы 6</p>
-</div>
-
-<div class="topic">
-    <h3 class="topic-title">Название темы 7</h3>
-    <p class="topic-content">Описание темы 7</p>
-</div>
-
-<div class="topic">
-    <h3 class="topic-title">Название темы 8</h3>
-    <p class="topic-content">Описание темы 8</p>
-</div>
+@foreach (var post in Model.Skip(1))
+{
+    <div class="topic">
+        <h3 class="topic-title">@post.Title</h3>
+        <p class="topic-content">Количество ответов: @post.ResponsesCount</p>
+    </div>
+}
 
 <div class="pagination">
     <div class="Navi">
