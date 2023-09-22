@@ -4,9 +4,7 @@
 
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
-@{
-    var currentUserPosts = ViewData["CurrentUserPosts"] as List<Post>;
-}
+
 <!DOCTYPE html>
 <html>
 
@@ -52,6 +50,7 @@
         <div class="sideBar">
             @if (SignInManager.IsSignedIn(User))
             {
+@*                 var currentUserPosts = ViewData["CurrentUserPosts"] as List<Post>;
                 <div class="widget-login">
                     <ul class="sortBarSide">
                         <li class="page-item-current">
@@ -86,7 +85,7 @@
                             </button>
                         </a>      
                     </div>
-                </div>
+                </div> *@
             }
             else
             {
