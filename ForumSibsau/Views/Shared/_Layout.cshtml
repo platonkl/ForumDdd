@@ -17,6 +17,9 @@
     <script src="https://kit.fontawesome.com/1b94797836.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="~/css/styles.css">
 </head>
+@{
+    var currentUserPosts = ViewData["CurrentUserPosts"] as List<Post>;
+}
 
 <body>
 
@@ -50,29 +53,47 @@
         <div class="sideBar">
             @if (SignInManager.IsSignedIn(User))
             {
-@*                 var currentUserPosts = ViewData["CurrentUserPosts"] as List<Post>;
-                <div class="widget-login">
-                    <ul class="sortBarSide">
-                        <li class="page-item-current">
-                            <a href="#">Мои темы</a>
-                        </li>
-                    </ul>
-                    <div class="own-topics">
-                        @{
-                            var firstPost = currentUserPosts.First();
-                            <div class="own-topic-first">
-                                <h3 class="topic-title">@firstPost.Title</h3>
-                                <p class="topic-content">Количество ответов: @firstPost.ResponsesCount</p>
-                            </div>
-                        }
-                        @foreach (var post in currentUserPosts.Skip(1))
-                        {
-                            <div class="own-topic">
-                                <h3 class="topic-title">@post.Title</h3>
-                                <p class="topic-content">Количество ответов: @post.ResponsesCount</p>
-                            </div>
-                        }
+                if (currentUserPosts != null && currentUserPosts.Count > 0)
+                {
+                    <div class="widget-login">
+                        <ul class="sortBarSide">
+                            <li class="page-item-current">
+                                <a href="#">Мои темы</a>
+                            </li>
+                        </ul>
+                        <div class="own-topics">
+                            @{
+                                var firstPost = currentUserPosts.First();
+                                <div class="own-topic-first">
+                                    <h3 class="topic-title">@firstPost.Title</h3>
+                                    <p class="topic-content">Количество ответов: @firstPost.ResponsesCount</p>
+                                </div>
+                            }
+                            @foreach (var post in currentUserPosts.Skip(1))
+                            {
+                                <div class="own-topic">
+                                    <h3 class="topic-title">@post.Title</h3>
+                                    <p class="topic-content">Количество ответов: @post.ResponsesCount</p>
+                                </div>
+                            }
+                        </div>
+                        <div class="widget-login btns">
+                            <a asp-controller="Post" asp-action="Create">
+                                <button type="button" class="btn btn-primary">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </a>
+                            <a asp-controller="Post" asp-action="Create">
+                                <button type="button" class="btn btn-primary">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </a>
+                        </div>
                     </div>
+                }
+                else
+                {
+                    <p>У вас еще нет созданных топиков.</p>
                     <div class="widget-login btns">
                         <a asp-controller="Post" asp-action="Create">
                             <button type="button" class="btn btn-primary">
@@ -83,9 +104,9 @@
                             <button type="button" class="btn btn-primary">
                                 <i class="fa-solid fa-ellipsis"></i>
                             </button>
-                        </a>      
+                        </a>
                     </div>
-                </div> *@
+                }
             }
             else
             {

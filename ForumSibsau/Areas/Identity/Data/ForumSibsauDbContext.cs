@@ -12,6 +12,7 @@ public class ForumSibsauDbContext : IdentityDbContext<ApplicationUser>
     public ForumSibsauDbContext(DbContextOptions<ForumSibsauDbContext> options)
         : base(options)
     {
+        Database.EnsureCreated();
     }
 
     public DbSet<Post> Posts { get; set; } = default!;

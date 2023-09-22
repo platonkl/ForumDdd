@@ -172,6 +172,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Ivan/Desktop/code/ForumSibsau/ForumSibsau/ForumSibsau/Views/Home/NoPostsFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb1Bvc3RzRm91bmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Ivan/Desktop/code/ForumSibsau/ForumSibsau/ForumSibsau/Views/Home/Popular.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb3B1bGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

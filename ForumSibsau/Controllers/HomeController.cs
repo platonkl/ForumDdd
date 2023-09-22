@@ -4,6 +4,7 @@ using ForumSibsau.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Security.Claims;
 
 namespace ForumSibsau.Controllers
 {
@@ -21,47 +22,82 @@ namespace ForumSibsau.Controllers
             _userManager = userManager;
         }
 
-        //public async Task<List<Post>> GetCurrentUserPostsAsync()
-        //{
-        //    var user = await _userManager.GetUserAsync(User);
-        //    var posts = _context.Posts
-        //        .Where(p => p.UserId == user.Id)
-        //        .OrderByDescending(p => p.ResponsesCount)
-        //        .Take(4)
-        //        .ToList();
-        //    return posts;
-        //}
-
-        public IActionResult Recently()
+        public async Task<List<Post>> GetCurrentUserPostsAsync(ClaimsPrincipal user)
         {
-            //var postsOwn = GetCurrentUserPostsAsync().Result;
-            //ViewData["CurrentUserPosts"] = postsOwn;
+            if (user == null)
+            {
+                // пользователь не залогинен, возвращаем пустой список
+                return new List<Post>();
+            }
+
+            var currentUser = await _userManager.GetUserAsync(user);
             var posts = _context.Posts
+                .Where(p => p.UserId == currentUser.Id)
+                .OrderByDescending(p => p.ResponsesCount)
+                .Take(4)
+                .AsEnumerable()
+                .Select(p => new Post { Title = p.Title, ResponsesCount = p.ResponsesCount, CreatedAt = p.CreatedAt })
+                .ToList();
+            return posts;
+        }
+
+        public async Task<IActionResult> Recently()
+        {
+            var user = User;
+            if (User.Identity.IsAuthenticated)
+            {
+                var postsOwn = await GetCurrentUserPostsAsync(user);
+                ViewData["CurrentUserPosts"] = postsOwn;
+            }
+            var posts = _context.Posts
+                .AsEnumerable()
                 .Select(p => new Post { Title = p.Title, ResponsesCount = p.ResponsesCount, CreatedAt = p.CreatedAt })
                 .OrderByDescending(p => p.CreatedAt)
                 .ToList();
+
+            if (posts.Count == 0)
+            {
+                return View("NoPostsFound");
+            }
+
             return View(posts);
         }
 
-        public IActionResult Popular()
+        public async Task<IActionResult> Popular()
         {
-            //var postsOwn = GetCurrentUserPostsAsync().Result;
-            //ViewData["CurrentUserPosts"] = postsOwn;
+            var user = User;
+            if (User.Identity.IsAuthenticated)
+            {
+                var postsOwn = await GetCurrentUserPostsAsync(user);
+                ViewData["CurrentUserPosts"] = postsOwn;
+            }
             var posts = _context.Posts
                 .Select(p => new Post { Title = p.Title, ResponsesCount = p.ResponsesCount })
                 .OrderByDescending(p => p.ResponsesCount)
                 .ToList();
+            if (posts.Count == 0)
+            {
+                return View("NoPostsFound");
+            }
             return View(posts);
         }
 
-        public IActionResult WithoutAnswer()
+        public async Task<IActionResult> WithoutAnswer()
         {
-            //var postsOwn = GetCurrentUserPostsAsync().Result;
-            //ViewData["CurrentUserPosts"] = postsOwn;
+            var user = User;
+            if (User.Identity.IsAuthenticated)
+            {
+                var postsOwn = await GetCurrentUserPostsAsync(user);
+                ViewData["CurrentUserPosts"] = postsOwn;
+            }
             var posts = _context.Posts
                 .Select(p => new Post { Title = p.Title, ResponsesCount = p.ResponsesCount })
                 .OrderBy(p => p.ResponsesCount)
                 .ToList();
+            if (posts.Count == 0)
+            {
+                return View("NoPostsFound");
+            }
             return View(posts);
         }
 
