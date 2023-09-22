@@ -21,21 +21,21 @@ namespace ForumSibsau.Controllers
             _userManager = userManager;
         }
 
-        public async Task<List<Post>> GetCurrentUserPostsAsync()
-        {
-            var user = await _userManager.GetUserAsync(User);
-            var posts = _context.Posts
-                .Where(p => p.UserId == user.Id)
-                .OrderByDescending(p => p.ResponsesCount)
-                .Take(4)
-                .ToList();
-            return posts;
-        }
+        //public async Task<List<Post>> GetCurrentUserPostsAsync()
+        //{
+        //    var user = await _userManager.GetUserAsync(User);
+        //    var posts = _context.Posts
+        //        .Where(p => p.UserId == user.Id)
+        //        .OrderByDescending(p => p.ResponsesCount)
+        //        .Take(4)
+        //        .ToList();
+        //    return posts;
+        //}
 
         public IActionResult Recently()
         {
-            var postsOwn = GetCurrentUserPostsAsync().Result;
-            ViewData["CurrentUserPosts"] = postsOwn;
+            //var postsOwn = GetCurrentUserPostsAsync().Result;
+            //ViewData["CurrentUserPosts"] = postsOwn;
             var posts = _context.Posts
                 .Select(p => new Post { Title = p.Title, ResponsesCount = p.ResponsesCount, CreatedAt = p.CreatedAt })
                 .OrderByDescending(p => p.CreatedAt)
@@ -45,8 +45,8 @@ namespace ForumSibsau.Controllers
 
         public IActionResult Popular()
         {
-            var postsOwn = GetCurrentUserPostsAsync().Result;
-            ViewData["CurrentUserPosts"] = postsOwn;
+            //var postsOwn = GetCurrentUserPostsAsync().Result;
+            //ViewData["CurrentUserPosts"] = postsOwn;
             var posts = _context.Posts
                 .Select(p => new Post { Title = p.Title, ResponsesCount = p.ResponsesCount })
                 .OrderByDescending(p => p.ResponsesCount)
@@ -56,8 +56,8 @@ namespace ForumSibsau.Controllers
 
         public IActionResult WithoutAnswer()
         {
-            var postsOwn = GetCurrentUserPostsAsync().Result;
-            ViewData["CurrentUserPosts"] = postsOwn;
+            //var postsOwn = GetCurrentUserPostsAsync().Result;
+            //ViewData["CurrentUserPosts"] = postsOwn;
             var posts = _context.Posts
                 .Select(p => new Post { Title = p.Title, ResponsesCount = p.ResponsesCount })
                 .OrderBy(p => p.ResponsesCount)
